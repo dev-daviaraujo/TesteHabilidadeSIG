@@ -1,0 +1,15 @@
+# Cache do Python
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Ambiente virtual
+venv/
+
+# Arquivos de configuração do VS Code
+.vscode/
+
+# Arquivos temporários do sistema
+*.swp
+*.tmp
+*.log

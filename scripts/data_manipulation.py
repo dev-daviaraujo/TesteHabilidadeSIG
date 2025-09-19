@@ -13,10 +13,8 @@ from queries.consultaSIG import QUERY_VENDAS
 
 def carregar_dados(): 
     conn = get_connection() 
-    df = pd.read_sql(QUERY_VENDAS, conn) 
-    print(df.head()) 
-    df["OrderDate"] = pd.to_datetime(df["OrderDate"]) 
-    print(df.head()) 
+    df = pd.read_sql(QUERY_VENDAS, conn)     
+    df["OrderDate"] = pd.to_datetime(df["OrderDate"])      
     return df 
 
 def resumo_vendas(df): 
